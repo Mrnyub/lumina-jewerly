@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lumina | Collections</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="preconnect" href="https://app.snipcart.com">
+    <link rel="preconnect" href="https://cdn.snipcart.com">
+    <link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.0.31/default/snipcart.css" />
+</head>
+<body>
+
+    <header>
+        <div class="logo" style="display: flex; align-items: center; gap: 10px;">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#D4AF37" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M6 3h12l4 6-10 13L2 9Z"></path>
+                <path d="M11 3v21"></path>
+                <path d="M2 9h20"></path>
+            </svg>
+            Lumina
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Collections</a></li>
+                <li><a href="about.html">Our Story</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <button class="snipcart-checkout yellow-basket">
+            Bag (<span class="snipcart-items-count">0</span>)
+        </button>
+    </header>
+
+    <main class="shop-container">
+        <div style="text-align: center; margin-bottom: 50px; opacity: 0; animation: fadeUp 1s ease forwards;">
+            <p style="color: #D4AF37; text-transform: uppercase; letter-spacing: 3px; font-size: 12px; font-weight: 600;">The Signature Collection</p>
+            <h1 style="font-size: 42px; margin: 10px 0;">The Lumina Solitaire Ring</h1>
+            <p style="color: #777; margin-top: 10px; max-width: 600px; margin-left: auto; margin-right: auto;">One timeless design, beautifully cast in 5 exclusive variations. Choose your perfect setting below.</p>
+        </div>
+        
+        <div class="search-container" style="text-align: center; margin-bottom: 50px; opacity: 0; animation: fadeUp 1s ease forwards; animation-delay: 0.2s;">
+            <input type="text" id="searchInput" placeholder="Search by metal or gemstone...">
+        </div>
+
+        <div class="product-grid" id="productGrid">
+            
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1605100804763-247f67b2548e?w=600&q=80" alt="Lumina Solitaire" class="product-img">
+                <h3>Lumina Solitaire</h3>
+                <p class="category">Category: 18k Yellow Gold</p>
+                <p class="desc">The classic standard. A brilliant-cut diamond set in warm, pure yellow gold.</p>
+                <p class="price">₱85,000.00</p>
+                <button class="btn primary-btn snipcart-add-item"
+                    data-item-id="lumina-yellow-gold" data-item-price="85000.00" data-item-url="https://mrnyub.github.io/lumina-jewelry/products.html"
+                    data-item-image="https://images.unsplash.com/photo-1605100804763-247f67b2548e?w=600&q=80"
+                    data-item-description="The classic standard. A brilliant-cut diamond set in warm yellow gold."
+                    data-item-name="Lumina Solitaire - Yellow Gold">Add to Bag</button>
+            </div>
+
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1603561591411-07134e71a2a9?w=600&q=80" alt="Lumina Solitaire" class="product-img">
+                <h3>Lumina Solitaire</h3>
+                <p class="category">Category: Romantic Rose Gold</p>
+                <p class="desc">A modern, blushing finish that offers a vintage, romantic aesthetic.</p>
+                <p class="price">₱87,500.00</p>
+                <button class="btn primary-btn snipcart-add-item"
+                    data-item-id="lumina-rose-gold" data-item-price="87500.00" data-item-url="https://mrnyub.github.io/lumina-jewelry/products.html"
+                    data-item-image="https://images.unsplash.com/photo-1603561591411-07134e71a2a9?w=600&q=80"
+                    data-item-description="A modern, blushing finish that offers a vintage, romantic aesthetic."
+                    data-item-name="Lumina Solitaire - Rose Gold">Add to Bag</button>
+            </div>
+
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1599643477874-13eb6722f468?w=600&q=80" alt="Lumina Solitaire" class="product-img">
+                <h3>Lumina Solitaire</h3>
+                <p class="category">Category: Pure White Gold</p>
+                <p class="desc">Sleek and sophisticated. Rhodium-plated for an icy, flawless shine.</p>
+                <p class="price">₱89,000.00</p>
+                <button class="btn primary-btn snipcart-add-item"
+                    data-item-id="lumina-white-gold" data-item-price="89000.00" data-item-url="https://mrnyub.github.io/lumina-jewelry/products.html"
+                    data-item-image="https://images.unsplash.com/photo-1599643477874-13eb6722f468?w=600&q=80"
+                    data-item-description="Sleek and sophisticated. Rhodium-plated for an icy, flawless shine."
+                    data-item-name="Lumina Solitaire - White Gold">Add to Bag</button>
+            </div>
+
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1611652022419-a9419f74343d?w=600&q=80" alt="Lumina Solitaire" class="product-img">
+                <h3>Lumina Solitaire</h3>
+                <p class="category">Category: Prestige Platinum</p>
+                <p class="desc">Our most durable, hypoallergenic metal paired with a 2-carat VVS diamond.</p>
+                <p class="price">₱145,000.00</p>
+                <button class="btn primary-btn snipcart-add-item"
+                    data-item-id="lumina-platinum" data-item-price="145000.00" data-item-url="https://mrnyub.github.io/lumina-jewelry/products.html"
+                    data-item-image="https://images.unsplash.com/photo-1611652022419-a9419f74343d?w=600&q=80"
+                    data-item-description="Our most durable, hypoallergenic metal paired with a 2-carat VVS diamond."
+                    data-item-name="Lumina Solitaire - Platinum">Add to Bag</button>
+            </div>
+
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1596944924616-7b38e7cfac36?w=600&q=80" alt="Lumina Solitaire" class="product-img">
+                <h3>Lumina Solitaire</h3>
+                <p class="category">Category: Royal Sapphire</p>
+                <p class="desc">A striking alternative featuring a deep blue, conflict-free sapphire center.</p>
+                <p class="price">₱95,500.00</p>
+                <button class="btn primary-btn snipcart-add-item"
+                    data-item-id="lumina-sapp
