@@ -1,53 +1,172 @@
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Lumina | Fine Jewelry</title>
-        <link rel="stylesheet" href="style.css">
-        
-        <link rel="preconnect" href="https://app.snipcart.com">
-        <link rel="preconnect" href="https://cdn.snipcart.com">
-        <link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.0.31/default/snipcart.css" />
-    </head>
-    <body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lumina | Fine Jewelry</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="preconnect" href="https://app.snipcart.com">
+    <link rel="preconnect" href="https://cdn.snipcart.com">
+    <link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.0.31/default/snipcart.css" />
+</head>
+<body>
 
-        <header>
-            <div class="logo" style="display: flex; align-items: center; gap: 10px;">
-                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#D4AF37" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M6 3h12l4 6-10 13L2 9Z"></path>
-                    <path d="M11 3v21"></path>
-                    <path d="M2 9h20"></path>
-                </svg>
-                Lumina
+    <header>
+        <div class="logo" style="display: flex; align-items: center; gap: 10px;">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#D4AF37" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M6 3h12l4 6-10 13L2 9Z"></path>
+                <path d="M11 3v21"></path>
+                <path d="M2 9h20"></path>
+            </svg>
+            Lumina
+        </div>
+        <nav>
+           <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Collections</a></li>
+                <li><a href="about.html">About us</a></li>
+                <li><a href="tracker.html">Tracker</a></li>
+                <li><a href="reviews.html">Reviews</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <button class="snipcart-checkout yellow-basket">
+            Bag (<span class="snipcart-items-count">0</span>)
+        </button>
+    </header>
+
+    <main class="hero">
+        <div class="hero-text">
+            <h1>Elegance,<br>Defined.</h1>
+            <p>Discover our exclusive collection of handcrafted, ethically sourced fine jewelry. Designed to illuminate your everyday moments and lasting memories.</p>
+            <div class="cta-buttons">
+                <a href="products.html" class="btn primary-btn">Explore Collection</a>
+                <a href="about.html" class="btn secondary-btn">Our Heritage</a>
             </div>
-            <nav>
-                <ul class="nav-links">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="products.html">Collections</a></li>
-                    <li><a href="about.html">Our Story</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
-            <button class="snipcart-checkout yellow-basket">
-                Bag (<span class="snipcart-items-count">0</span>)
-            </button>
-        </header>
+        </div>
+        <div class="hero-image"></div>
+    </main>
 
-        <main class="hero">
-            <div class="hero-text">
-                <h1>Elegance,<br>Defined.</h1>
-                <p>Discover our exclusive collection of handcrafted, ethically sourced fine jewelry. Designed to illuminate your everyday moments and lasting memories.</p>
-                <div class="cta-buttons">
-                    <a href="products.html" class="btn primary-btn">Explore Collection</a>
-                    <a href="about.html" class="btn secondary-btn">Our Heritage</a>
+    <section class="featured-products">
+        <div class="section-header">
+            <h2>Featured Pieces</h2>
+            <a href="products.html" class="view-all">View All Collections &rarr;</a>
+        </div>
+        <div class="product-grid">
+            
+            <div class="product-card">
+                <img src="https://images.pexels.com/photos/3641056/pexels-photo-3641056.jpeg" alt="Rose Gold Eternity Ring" class="product-img">
+                <h3>Rose Gold Eternity Ring</h3>
+                <p class="price">₱24,500.00</p>
+                <button class="snipcart-add-item add-to-cart-btn"
+                  data-item-id="lumina-ring-01"
+                  data-item-price="24500.00"
+                  data-item-url="https://mrnyub.github.io/lumina-jewelry/index.html"
+                  data-item-image="https://images.pexels.com/photos/3641056/pexels-photo-3641056.jpeg"
+                  data-item-name="Rose Gold Eternity Ring">
+                  Add to Bag
+                </button>
+            </div>
+
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1596944924616-7b38e7cfac36?w=600&q=80" alt="Sapphire Drop Pendant" class="product-img">
+                <h3>Sapphire Drop Pendant</h3>
+                <p class="price">₱18,990.00</p>
+                <button class="snipcart-add-item add-to-cart-btn"
+                  data-item-id="lumina-pendant-01"
+                  data-item-price="18990.00"
+                  data-item-url="https://mrnyub.github.io/lumina-jewelry/index.html"
+                  data-item-image="https://images.unsplash.com/photo-1596944924616-7b38e7cfac36?w=600&q=80"
+                  data-item-name="Sapphire Drop Pendant">
+                  Add to Bag
+                </button>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="order-tracking">
+        <div class="tracking-box">
+            <h2>Track Your Package</h2>
+            <p>Enter your order number to track your jewelry's journey.</p>
+            <form id="trackingForm" class="tracking-form">
+                <input type="text" placeholder="e.g., LUM-987654321" required>
+                <button type="submit" class="btn primary-btn">Track Order</button>
+            </form>
+        </div>
+    </section>
+
+    <section class="reviews">
+        <h2>Client Testimonials</h2>
+        <div class="review-grid" id="dynamicReviewGrid"></div>
+
+        <div class="review-form-container">
+            <h3>Leave a Review</h3>
+            <form id="reviewForm" class="review-form">
+                <input type="text" id="reviewName" placeholder="Your Name" required>
+                <select id="reviewRating" required>
+                    <option value="5">⭐⭐⭐⭐⭐ - Stunning!</option>
+                    <option value="4">⭐⭐⭐⭐ - Beautiful</option>
+                    <option value="3">⭐⭐⭐ - Good</option>
+                </select>
+                <textarea id="reviewText" rows="3" placeholder="Tell us about your piece..." required></textarea>
+                <button type="submit" class="btn primary-btn">Submit Review</button>
+            </form>
+            <div id="reviewSuccessMessage" style="display: none; color: #b76e79; text-align: center; margin-top: 15px; font-weight: bold;">
+                Thank you for your feedback! Your review has been posted.
+            </div>
+        </div>
+    </section>
+
+    <section class="suppliers">
+        <h2>Ethical Sourcing Partners</h2>
+        <p>We work exclusively with certified, conflict-free providers.</p>
+        <div class="supplier-logos">
+            <span>[ Antwerp Diamond Co. ]</span>
+            <span>[ Swiss Gold Refiners ]</span>
+            <span>[ Tahitian Pearl Farms ]</span>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-column">
+                <div class="logo" style="display: flex; align-items: center; gap: 10px;">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#D4AF37" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M6 3h12l4 6-10 13L2 9Z"></path>
+                        <path d="M11 3v21"></path>
+                        <path d="M2 9h20"></path>
+                    </svg>
+                    LUMINA
                 </div>
+                <p style="margin-top: 15px;">Elegance Redefined. Crafted for a lifetime.</p>
             </div>
-            <div class="hero-image"></div>
-        </main>
+            
+            <div class="footer-column">
+                <h3>Contact Details</h3>
+                <p>Email: concierge@luminajewelry.ph</p>
+                <p>Phone: +63 917 888 9999</p>
+                <p>Makati City, Philippines</p>
+            </div>
 
-        <script async src="https://cdn.snipcart.com/themes/v3.0.31/default/snipcart.js"></script>
-        <div hidden id="snipcart" data-api-key="ZjcyM2M0YTAtOWQ5Zi00ODljLTkwZDQtMDY2Mzk1NTE3ZDMyNjM5MTAwMDE5Mzc3NTAxNTI1" data-currency="php"></div>
-        <script src="script.js"></script>
-    </body>
-    </html>
+            <div class="footer-column">
+                <h3>Discover</h3>
+                <ul>
+                    <li><a href="about.html">About the Brand & Founders</a></li>
+                    <li><a href="products.html">All Collections</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h3>Staff Portal</h3>
+                <a href="inventory.html" class="admin-link">Inventory & Orders &rarr;</a>
+            </div>
+        </div>
+    </footer>
+
+    <script async src="https://cdn.snipcart.com/themes/v3.0.31/default/snipcart.js"></script>
+    <div hidden id="snipcart" data-api-key="ZjcyM2M0YTAtOWQ5Zi00ODljLTkwZDQtMDY2Mzk1NTE3ZDMyNjM5MTAwMDE5Mzc3NTAxNTI1" data-currency="php"></div>
+    <script src="script.js"></script>
+</body>
+</html>
