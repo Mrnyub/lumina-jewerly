@@ -13,12 +13,21 @@
 <body>
 
     <header>
-        <div class="logo">LUMINA</div>
+        <div class="logo" style="display: flex; align-items: center; gap: 10px;">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#D4AF37" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M6 3h12l4 6-10 13L2 9Z"></path>
+                <path d="M11 3v21"></path>
+                <path d="M2 9h20"></path>
+            </svg>
+            Lumina
+        </div>
         <nav>
-            <ul class="nav-links">
+           <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="products.html">Collections</a></li>
-                <li><a href="about.html">Our Story</a></li>
+                <li><a href="about.html">Atelier</a></li>
+                <li><a href="tracker.html">Tracker</a></li>
+                <li><a href="reviews.html">Reviews</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
@@ -27,106 +36,137 @@
         </button>
     </header>
 
-    <main class="shop-container">
-        <div style="text-align: center; margin-bottom: 60px; opacity: 0; animation: fadeUp 1s ease forwards;">
-            <p style="color: #D4AF37; text-transform: uppercase; letter-spacing: 3px; font-size: 12px; font-weight: 600;">The Signature Collection</p>
-            <h1 style="font-size: 42px; margin: 10px 0;">The Lumina Solitaire</h1>
-            <p style="color: #777; margin-top: 10px; max-width: 600px; margin-left: auto; margin-right: auto; line-height: 1.8;">One timeless design, beautifully cast in 5 exclusive variations. Choose your perfect setting below.</p>
+    <main class="featured-products" style="margin-top: 40px;">
+        <div style="text-align: center; margin-bottom: 40px;">
+            <h1 style="font-size: 42px; color: #333; margin-bottom: 15px;">Our Collections</h1>
+            <p style="color: #666; max-width: 600px; margin: 0 auto;">Explore our curated selection of fine jewelry, designed to bring brilliant light to your most cherished moments.</p>
         </div>
         
-        <div class="search-container" style="text-align: center; margin-bottom: 60px; opacity: 0; animation: fadeUp 1s ease forwards; animation-delay: 0.2s;">
-            <input type="text" id="searchInput" placeholder="Search by metal or gemstone...">
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Search for rings, necklaces, earrings..." class="luxury-search">
         </div>
 
         <div class="product-grid" id="productGrid">
             
             <div class="product-card">
-                <img src="https://images.pexels.com/photos/177332/pexels-photo-177332.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Yellow Gold Ring" class="product-img">
-                <div class="product-info">
-                    <h3>Yellow Gold</h3>
-                    <p class="category">18k Standard Setting</p>
-                    <p class="desc">The classic standard. A brilliant-cut diamond set in warm, pure yellow gold.</p>
-                    <p class="price">₱85,000.00</p>
-                    <button class="bag-btn snipcart-add-item"
-                        data-item-id="lumina-yellow-gold" 
-                        data-item-price="85000.00" 
-                        data-item-url="https://mrnyub.github.io/lumina-jewerly/products.html"
-                        data-item-image="https://images.pexels.com/photos/177332/pexels-photo-177332.jpeg?auto=compress&cs=tinysrgb&w=600"
-                        data-item-name="Lumina Solitaire - Yellow Gold">Add to Bag</button>
-                </div>
+                <img src="https://images.pexels.com/photos/3641056/pexels-photo-3641056.jpeg" alt="Rose Gold Eternity Ring" class="product-img">
+                <h3 class="category" style="display: none;">ring gold</h3>
+                <h3>Rose Gold Eternity Ring</h3>
+                <p class="price">₱24,500.00</p>
+                <button class="snipcart-add-item add-to-cart-btn"
+                  data-item-id="lumina-ring-01"
+                  data-item-price="24500.00"
+                  data-item-url="https://mrnyub.github.io/lumina-jewelry/products.html"
+                  data-item-image="https://images.pexels.com/photos/3641056/pexels-photo-3641056.jpeg"
+                  data-item-name="Rose Gold Eternity Ring">Add to Bag</button>
             </div>
 
             <div class="product-card">
-                <img src="https://images.pexels.com/photos/265906/pexels-photo-265906.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Rose Gold Ring" class="product-img">
-                <div class="product-info">
-                    <h3>Rose Gold</h3>
-                    <p class="category">Romantic Finish</p>
-                    <p class="desc">A modern, blushing finish that offers a vintage, romantic aesthetic.</p>
-                    <p class="price">₱87,500.00</p>
-                    <button class="bag-btn snipcart-add-item"
-                        data-item-id="lumina-rose-gold" 
-                        data-item-price="87500.00" 
-                        data-item-url="https://mrnyub.github.io/lumina-jewerly/products.html"
-                        data-item-image="https://images.pexels.com/photos/265906/pexels-photo-265906.jpeg?auto=compress&cs=tinysrgb&w=600"
-                        data-item-name="Lumina Solitaire - Rose Gold">Add to Bag</button>
-                </div>
+                <img src="https://images.unsplash.com/photo-1596944924616-7b38e7cfac36?w=600&q=80" alt="Sapphire Drop Pendant" class="product-img">
+                <h3 class="category" style="display: none;">necklace sapphire</h3>
+                <h3>Sapphire Drop Pendant</h3>
+                <p class="price">₱18,990.00</p>
+                <button class="snipcart-add-item add-to-cart-btn"
+                  data-item-id="lumina-pendant-01"
+                  data-item-price="18990.00"
+                  data-item-url="https://mrnyub.github.io/lumina-jewelry/products.html"
+                  data-item-image="https://images.unsplash.com/photo-1596944924616-7b38e7cfac36?w=600&q=80"
+                  data-item-name="Sapphire Drop Pendant">Add to Bag</button>
             </div>
 
             <div class="product-card">
-                <img src="https://images.pexels.com/photos/248077/pexels-photo-248077.jpeg?auto=compress&cs=tinysrgb&w=800" alt="White Gold Ring" class="product-img">
-                <div class="product-info">
-                    <h3>White Gold</h3>
-                    <p class="category">Pure Alloy Setting</p>
-                    <p class="desc">Sleek and sophisticated. Rhodium-plated for an icy, flawless shine.</p>
-                    <p class="price">₱89,000.00</p>
-                    <button class="bag-btn snipcart-add-item"
-                        data-item-id="lumina-white-gold" 
-                        data-item-price="89000.00" 
-                        data-item-url="https://mrnyub.github.io/lumina-jewerly/products.html"
-                        data-item-image="https://images.pexels.com/photos/248077/pexels-photo-248077.jpeg?auto=compress&cs=tinysrgb&w=600"
-                        data-item-name="Lumina Solitaire - White Gold">Add to Bag</button>
-                </div>
+                <img src="https://images.unsplash.com/photo-1611591437281-460bfbe1220a?w=600&q=80" alt="Classic Diamond Tennis Bracelet" class="product-img">
+                <h3 class="category" style="display: none;">bracelet diamond</h3>
+                <h3>Diamond Tennis Bracelet</h3>
+                <p class="price">₱45,000.00</p>
+                <button class="snipcart-add-item add-to-cart-btn"
+                  data-item-id="lumina-bracelet-01"
+                  data-item-price="45000.00"
+                  data-item-url="https://mrnyub.github.io/lumina-jewelry/products.html"
+                  data-item-image="https://images.unsplash.com/photo-1611591437281-460bfbe1220a?w=600&q=80"
+                  data-item-name="Diamond Tennis Bracelet">Add to Bag</button>
             </div>
 
             <div class="product-card">
-                <img src="https://images.pexels.com/photos/1454171/pexels-photo-1454171.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Platinum Ring" class="product-img">
-                <div class="product-info">
-                    <h3>Platinum</h3>
-                    <p class="category">Prestige Setting</p>
-                    <p class="desc">Our most durable metal paired with a flawless 2-carat VVS diamond.</p>
-                    <p class="price">₱145,000.00</p>
-                    <button class="bag-btn snipcart-add-item"
-                        data-item-id="lumina-platinum" 
-                        data-item-price="145000.00" 
-                        data-item-url="https://mrnyub.github.io/lumina-jewerly/products.html"
-                        data-item-image="https://images.pexels.com/photos/1454171/pexels-photo-1454171.jpeg?auto=compress&cs=tinysrgb&w=600"
-                        data-item-name="Lumina Solitaire - Platinum">Add to Bag</button>
-                </div>
+                <img src="https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?w=600&q=80" alt="Tahitian Pearl Earrings" class="product-img">
+                <h3 class="category" style="display: none;">earrings pearl</h3>
+                <h3>Tahitian Pearl Earrings</h3>
+                <p class="price">₱12,500.00</p>
+                <button class="snipcart-add-item add-to-cart-btn"
+                  data-item-id="lumina-earrings-01"
+                  data-item-price="12500.00"
+                  data-item-url="https://mrnyub.github.io/lumina-jewelry/products.html"
+                  data-item-image="https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?w=600&q=80"
+                  data-item-name="Tahitian Pearl Earrings">Add to Bag</button>
             </div>
 
             <div class="product-card">
-                <img src="https://images.pexels.com/photos/2735970/pexels-photo-2735970.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Sapphire Ring" class="product-img">
-                <div class="product-info">
-                    <h3>Royal Sapphire</h3>
-                    <p class="category">Alternative Stone</p>
-                    <p class="desc">A striking alternative featuring a deep blue, conflict-free sapphire.</p>
-                    <p class="price">₱95,500.00</p>
-                    <button class="bag-btn snipcart-add-item"
-                        data-item-id="lumina-sapphire" 
-                        data-item-price="95500.00" 
-                        data-item-url="https://mrnyub.github.io/lumina-jewerly/products.html"
-                        data-item-image="https://images.pexels.com/photos/2735970/pexels-photo-2735970.jpeg?auto=compress&cs=tinysrgb&w=600"
-                        data-item-name="Lumina Solitaire - Sapphire">Add to Bag</button>
-                </div>
+                <img src="https://images.pexels.com/photos/4291121/pexels-photo-4291121.jpeg" alt="Vintage Platinum Engagement Ring" class="product-img">
+                <h3 class="category" style="display: none;">ring diamond platinum engagement</h3>
+                <h3>Vintage Platinum Ring</h3>
+                <p class="price">₱85,000.00</p>
+                <button class="snipcart-add-item add-to-cart-btn"
+                  data-item-id="lumina-ring-02"
+                  data-item-price="85000.00"
+                  data-item-url="https://mrnyub.github.io/lumina-jewelry/products.html"
+                  data-item-image="https://images.pexels.com/photos/4291121/pexels-photo-4291121.jpeg"
+                  data-item-name="Vintage Platinum Ring">Add to Bag</button>
             </div>
+
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1611085583191-a3b181a88401?w=600&q=80" alt="Minimalist Gold Choker" class="product-img">
+                <h3 class="category" style="display: none;">necklace gold choker</h3>
+                <h3>Minimalist Gold Choker</h3>
+                <p class="price">₱21,000.00</p>
+                <button class="snipcart-add-item add-to-cart-btn"
+                  data-item-id="lumina-choker-01"
+                  data-item-price="21000.00"
+                  data-item-url="https://mrnyub.github.io/lumina-jewelry/products.html"
+                  data-item-image="https://images.unsplash.com/photo-1611085583191-a3b181a88401?w=600&q=80"
+                  data-item-name="Minimalist Gold Choker">Add to Bag</button>
+            </div>
+
         </div>
     </main>
 
-    <div hidden id="snipcart" 
-         data-api-key="ZjcyM2M0YTAtOWQ5Zi00ODljLTkwZDQtMDY2Mzk1NTE3ZDMyNjM5MTAwMDE5Mzc3NTAxNTI1" 
-         data-currency="php"></div>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-column">
+                <div class="logo" style="display: flex; align-items: center; gap: 10px;">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#D4AF37" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M6 3h12l4 6-10 13L2 9Z"></path>
+                        <path d="M11 3v21"></path>
+                        <path d="M2 9h20"></path>
+                    </svg>
+                    LUMINA
+                </div>
+                <p style="margin-top: 15px;">Elegance Redefined. Crafted for a lifetime.</p>
+            </div>
+            
+            <div class="footer-column">
+                <h3>Contact Details</h3>
+                <p>Email: concierge@luminajewelry.ph</p>
+                <p>Phone: +63 917 888 9999</p>
+                <p>Makati City, Philippines</p>
+            </div>
+
+            <div class="footer-column">
+                <h3>Discover</h3>
+                <ul>
+                    <li><a href="about.html">About the Brand & Founders</a></li>
+                    <li><a href="products.html">All Collections</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h3>Staff Portal</h3>
+                <a href="inventory.html" class="admin-link">Inventory & Orders &rarr;</a>
+            </div>
+        </div>
+    </footer>
 
     <script async src="https://cdn.snipcart.com/themes/v3.0.31/default/snipcart.js"></script>
+    <div hidden id="snipcart" data-api-key="ZjcyM2M0YTAtOWQ5Zi00ODljLTkwZDQtMDY2Mzk1NTE3ZDMyNjM5MTAwMDE5Mzc3NTAxNTI1" data-currency="php"></div>
     <script src="script.js"></script>
 </body>
 </html>
