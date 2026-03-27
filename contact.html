@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lumina | Concierge</title>
+    <title>Lumina | Concern</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://app.snipcart.com">
     <link rel="preconnect" href="https://cdn.snipcart.com">
@@ -12,13 +12,22 @@
 <body>
 
     <header>
-        <div class="logo">LUMINA</div>
+        <div class="logo" style="display: flex; align-items: center; gap: 10px;">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#D4AF37" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M6 3h12l4 6-10 13L2 9Z"></path>
+                <path d="M11 3v21"></path>
+                <path d="M2 9h20"></path>
+            </svg>
+            Lumina
+        </div>
         <nav>
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="products.html">Collections</a></li>
-                <li><a href="about.html">Atelier</a></li>
-                <li><a href="contact.html">Concierge</a></li>
+                <li><a href="about.html">About us</a></li>
+                <li><a href="tracker.html">Tracker</a></li>
+                <li><a href="reviews.html">Reviews</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
         <button class="snipcart-checkout yellow-basket">
@@ -26,55 +35,49 @@
         </button>
     </header>
 
-    <main class="contact-container">
+    <main class="page-container contact-container">
+        
+        <div class="page-header" style="opacity: 0; animation: fadeUp 1s ease forwards;">
+            <h1>Client Concern</h1>
+            <p>Whether you are seeking a bespoke commission, require assistance with an existing order, or wish to schedule a private viewing, our dedicated concierge team is at your service.</p>
+        </div>
+
         <div class="contact-wrapper">
             
-            <div class="contact-info" style="opacity: 0; animation: fadeUp 1s ease forwards;">
-                <h2>Client Concierge</h2>
-                <p>Whether you are seeking a bespoke commission, require assistance with an existing order, or wish to schedule a private viewing, our dedicated concierge team is at your service.</p>
-                
-                <ul class="info-list">
-                    <li><strong>Boutique Address:</strong> Lumina Flagship, Cebu City, Philippines</li>
-                    <li><strong>Telephone:</strong> +63 (032) 555-0198</li>
-                    <li><strong>Email:</strong> concierge@luminajewelry.com</li>
-                    <li><strong>Private Hours:</strong> Mon - Sat, 10:00 AM - 7:00 PM (By Appointment)</li>
-                </ul>
+            <div class="contact-info" style="opacity: 0; animation: fadeUp 1s ease forwards; animation-delay: 0.1s;">
+                <h2>Boutique Details</h2>
+                <p><strong>Boutique Address:</strong><br>Lumina Flagship, Cebu City, Philippines</p>
+                <p style="margin-top: 20px;"><strong>Telephone:</strong><br>+63 (032) 555-0198</p>
+                <p style="margin-top: 20px;"><strong>Email:</strong><br>concierge@luminajewelry.com</p>
+                <p style="margin-top: 20px;"><strong>Private Hours:</strong><br>Mon - Sat, 10:00 AM - 7:00 PM<br>(By Appointment Only)</p>
             </div>
 
             <div class="contact-form-container" style="opacity: 0; animation: fadeUp 1s ease forwards; animation-delay: 0.2s;">
                 <h2>Send an Inquiry</h2>
                 <form class="contact-form">
-                    <div class="form-group">
-                        <label for="name">Full Name</label>
-                        <input type="text" id="name" placeholder="Enter your full name" required>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="email">Email Address</label>
-                        <input type="email" id="email" placeholder="Enter your email address" required>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="subject">Inquiry Type</label>
-                        <select id="subject" required>
-                            <option value="">Select a subject...</option>
-                            <option value="consultation">Request Private Consultation</option>
-                            <option value="order">Order Status</option>
-                            <option value="feedback">Review & Feedback</option>
-                        </select>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="message">Your Message</label>
-                        <textarea id="message" rows="3" placeholder="How may we assist you today?" required></textarea>
-                    </div>
-                    
-                    <button type="submit" class="btn primary-btn">Submit Inquiry</button>
+                    <input type="text" id="name" placeholder="Full Name" required>
+                    <input type="email" id="email" placeholder="Email Address" required>
+                    <select id="subject" required>
+                        <option value="">Select an Inquiry Type...</option>
+                        <option value="consultation">Request Private Consultation</option>
+                        <option value="order">Order Status</option>
+                        <option value="feedback">Review & Feedback</option>
+                    </select>
+                    <textarea id="message" rows="4" placeholder="How may we assist you today?" required></textarea>
+                    <button type="submit" class="btn primary-btn" style="width: 100%; margin: 0;">Submit Inquiry</button>
                 </form>
             </div>
             
         </div>
     </main>
+
+    <footer style="margin-top: 80px;">
+        <div class="footer-content">
+            <div class="footer-column">
+                <div class="logo">✨ LUMINA</div>
+            </div>
+        </div>
+    </footer>
 
     <script async src="https://cdn.snipcart.com/themes/v3.0.31/default/snipcart.js"></script>
     <div hidden id="snipcart" data-api-key="ZjcyM2M0YTAtOWQ5Zi00ODljLTkwZDQtMDY2Mzk1NTE3ZDMyNjM5MTAwMDE5Mzc3NTAxNTI1" data-currency="php"></div>
