@@ -12,12 +12,21 @@
 <body>
 
     <header>
-        <div class="logo">LUMINA</div>
+        <div class="logo" style="display: flex; align-items: center; gap: 10px;">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#D4AF37" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M6 3h12l4 6-10 13L2 9Z"></path>
+                <path d="M11 3v21"></path>
+                <path d="M2 9h20"></path>
+            </svg>
+            Lumina
+        </div>
         <nav>
-            <ul class="nav-links">
+           <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="products.html">Collections</a></li>
-                <li><a href="about.html">Our Story</a></li>
+                <li><a href="about.html">About us</a></li>
+                <li><a href="tracker.html">Tracker</a></li>
+                <li><a href="reviews.html">Reviews</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
@@ -26,65 +35,71 @@
         </button>
     </header>
 
-    <main class="about-container">
-        <section class="company-info" style="opacity: 0; animation: fadeUp 1s ease forwards;">
+    <main class="page-container about-container">
+        <section class="page-header" style="opacity: 0; animation: fadeUp 1s ease forwards;">
             <h1>The Lumina Heritage</h1>
             <p>Founded on the belief that true luxury lies in the details, Lumina Fine Jewelry was established to bring ethically sourced, masterfully crafted pieces to the modern connoisseur. Every gemstone is hand-selected, and every setting is forged with generations of artisanal expertise.</p>
-            
-            <div class="mission-vision">
-                <div class="card">
-                    <h2>Our Mission</h2>
-                    <p>To redefine modern luxury by creating timeless, heirloom-quality jewelry that celebrates life's most brilliant moments without compromising ethical standards.</p>
-                </div>
-                <div class="card">
-                    <h2>Our Vision</h2>
-                    <p>Flawlessly crafted, conflict-free fine jewelry, backed by a commitment to sustainability, exceptional artistry, and unparalleled customer service.</p>
-                </div>
-            </div>
         </section>
 
-        <section class="team-section" style="opacity: 0; animation: fadeUp 1s ease forwards; animation-delay: 0.2s;">
-            <h2 style="text-align: center; margin-bottom: 30px;">The Artisans</h2>
+        <section class="story-content" style="opacity: 0; animation: fadeUp 1s ease forwards; animation-delay: 0.2s;">
+            <div class="story-text">
+                <h2>Our Mission</h2>
+                <p>To redefine modern luxury by creating timeless, heirloom-quality jewelry that celebrates life's most brilliant moments without compromising ethical standards.</p>
+                <h2 style="margin-top: 30px;">Our Vision</h2>
+                <p>Flawlessly crafted, conflict-free fine jewelry, backed by a commitment to sustainability, exceptional artistry, and unparalleled customer service.</p>
+            </div>
+            <img src="https://images.pexels.com/photos/6098251/pexels-photo-6098251.jpeg" alt="Jewelry Crafting" class="story-image">
+        </section>
+
+        <section class="leadership-section" style="opacity: 0; animation: fadeUp 1s ease forwards; animation-delay: 0.3s;">
+            <h2>The Artisans</h2>
             
-            <div class="hierarchy" style="display: flex; flex-direction: column; align-items: center; gap: 40px; text-align: center;">
+            <div class="team-grid">
                 
-                <div class="tier ceo-tier">
-                    <div class="team-member">
-                        <img src="ceo.jpg" alt="Mojad" class="team-img" style="border-radius: 50%; width: 150px; height: 150px; object-fit: cover;">
-                        <h3 style="margin-top: 15px;">Salatiel Balauro</h3>
-                        <p class="role" style="color: #777; font-size: 14px; text-transform: uppercase; letter-spacing: 1px;">Founder & Creative Director</p>
-                    </div>
+                <div class="team-card ceo-tier">
+                    <img src="ceo.jpg" alt="Jeany Rose Cordova">
+                    <h3>Salatiel Balauro</h3>
+                    <p class="role">Founder & Creative Director</p>
                 </div>
 
-                <div class="tier manager-tier">
-                    <div class="team-member">
-                        <img src="manager.jpg" alt="Alex Chen" class="team-img" style="border-radius: 50%; width: 150px; height: 150px; object-fit: cover;">
-                        <h3 style="margin-top: 15px;">Ma. Lyn Pialan</h3>
-                        <p class="role" style="color: #777; font-size: 14px; text-transform: uppercase; letter-spacing: 1px;">Head of Gemology</p>
-                    </div>
+                <div class="team-card manager-tier">
+                    <img src="manager.jpg" alt="Hershey Delantar">
+                    <h3>Ma. Lyn Pialan</h3>
+                    <p class="role">Head of Gemology</p>
                 </div>
 
-                <div class="tier staff-tier">
-                    <div class="team-member">
-                        <img src="staff.jpg" alt="Taylor Smith" class="team-img" style="border-radius: 50%; width: 150px; height: 150px; object-fit: cover;">
-                        <h3 style="margin-top: 15px;">Princes Angel Quijano</h3>
-                        <p class="role" style="color: #777; font-size: 14px; text-transform: uppercase; letter-spacing: 1px;">Client Concierge</p>
-                    </div>
+                <div class="team-card staff-tier">
+                    <img src="staff.jpg" alt="Gabriela Mae Capilitan">
+                    <h3>Princes Angel Quijano</h3>
+                    <p class="role">Client Concierge</p>
                 </div>
 
             </div>
         </section>
 
-        <section class="suppliers-section" style="opacity: 0; animation: fadeUp 1s ease forwards; animation-delay: 0.4s; text-align: center; margin-top: 60px;">
+        <section class="suppliers" style="opacity: 0; animation: fadeUp 1s ease forwards; animation-delay: 0.4s;">
             <h2>Our Ethical Partners</h2>
-            <ul style="list-style: none; padding: 0; margin-top: 20px;">
-                <li style="margin-bottom: 10px;">The Antwerp Diamond Exchange</li>
-                <li style="margin-bottom: 10px;">Swiss Precious Metals Refinery</li>
-                <li style="margin-bottom: 10px;">Global Ethical Gemstones Guild</li>
-                <li style="margin-bottom: 10px;">Tahitian Pearl Harvesters</li>
-            </ul>
+            <div class="supplier-logos">
+                <span>[ The Antwerp Diamond Exchange ]</span>
+                <span>[ Swiss Precious Metals Refinery ]</span>
+                <span>[ Global Ethical Gemstones Guild ]</span>
+                <span>[ Tahitian Pearl Harvesters ]</span>
+            </div>
         </section>
     </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-column">
+                <div class="logo">✨ LUMINA</div>
+                <p>Elegance Redefined.</p>
+            </div>
+            <div class="footer-column">
+                <h3>Staff Portal</h3>
+                <a href="inventory.html" class="admin-link">Inventory & Orders &rarr;</a>
+            </div>
+        </div>
+    </footer>
 
     <script async src="https://cdn.snipcart.com/themes/v3.0.31/default/snipcart.js"></script>
     <div hidden id="snipcart" data-api-key="ZjcyM2M0YTAtOWQ5Zi00ODljLTkwZDQtMDY2Mzk1NTE3ZDMyNjM5MTAwMDE5Mzc3NTAxNTI1" data-currency="php"></div>
