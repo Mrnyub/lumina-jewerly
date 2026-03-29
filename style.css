@@ -174,36 +174,99 @@ footer { background: #ffffff; padding: 80px 50px 30px; border-top: 1px solid #ea
 .story-text p { color: #555; line-height: 1.8; margin-bottom: 20px; font-size: 16px; }
 .story-image { flex: 1; max-width: 500px; border-radius: 4px; box-shadow: 0 20px 40px rgba(0,0,0,0.08); }
 
-.leadership-section { text-align: center; border-top: 1px solid #eaeaea; padding-top: 60px; margin-bottom: 60px; }
-.leadership-section h2 { font-size: 32px; margin-bottom: 40px; }
-/* Team Grid Vertical Layout */
+.leadership-section {
+    text-align: center;
+    padding: 100px 10%;
+    background-color: var(--pearl);
+}
+
+.leadership-section H2 {
+    font-size: 48px;
+    color: var(--forest);
+    margin-bottom: 70px;
+}
+
+/* 1. Main Container (Still Vertical) */
 .team-grid {
     display: flex;
-    flex-direction: column; /* This forces vertical stacking */
-    align-items: center;
-    gap: 60px;
-    padding: 40px 0;
+    flex-direction: column; /* Vertical Stacking */
+    align-items: center; /* Centered */
+    gap: 70px; /* Big gap between entries */
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
+/* 2. Team Card Structure */
 .team-card {
-    text-align: center;
-    transition: transform 0.4s ease;
+    display: flex;
+    flex-direction: row; /* Layout: Image left, text right */
+    align-items: center;
+    gap: 40px; /* Gap between circle and text */
+    text-align: left; /* Text aligns left */
+    width: 100%;
+    max-width: 700px; /* Keeps the list clean and centered */
+    padding: 20px;
+    transition: all 0.4s ease;
 }
 
-.team-card img {
-    /* Ensures the circle stays perfect */
-    display: block;
-    margin: 0 auto 20px auto;
+/* Sub-page Hover effect */
+.team-card:hover {
+    transform: translateX(15px); /* Elegant slide effect on sub-page */
+}
+
+/* 3. The CIRCLE FRAME (This FIXES the margins!) */
+.team-card .img-wrapper {
+    /* Explicit, perfectly matching size for the frame */
+    flex: 0 0 180px; /* Do not shrink, do not grow, always be 180px */
+    width: 180px;
+    height: 180px;
+    
+    /* Perfect Circle and Overflow control */
+    border-radius: 50%;
+    overflow: hidden; /* Clips the image inside */
+    
+    /* The consistent frame */
+    border: 3px solid var(--sand); /* Forest for Lumina */
+    padding: 7px; /* Consistent internal padding */
+    background-color: white; /* Clean background */
+    box-shadow: 0 10px 30px rgba(59, 51, 44, 0.08); /* Soft shadow */
+    
+    /* Ensures centering inside the flex row */
+    margin: 0;
+}
+
+/* 4. The IMAGE INSIDE (Perfectly Unified Crop) */
+.team-card .img-wrapper img {
+    width: 100%; /* Spans the wrapper */
+    height: 100%;
+    border-radius: 50%; /* Circle */
+    
+    /* CRITICAL FIX: object-fit + object-position */
+    object-fit: cover; /* Forces the image to fill the 180x180 circle */
+    object-position: center 20%; /* Nudges crop up to keep faces centered */
+    
+    transition: all 0.5s ease;
+}
+
+/* 5. Team Card Text */
+.team-info {
+    flex: 1; /* Takes remaining space */
 }
 
 .team-card h3 {
     font-family: 'Cormorant Garamond', serif;
-    font-size: 28px;
+    font-size: 32px;
+    color: var(--forest);
     margin-bottom: 5px;
 }
 
-.team-card:hover {
-    transform: translateY(-10px);
+.team-card p.role {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: var(--sand);
+    font-weight: 600;
 }
 /* Contact Page Specifics */
 .contact-wrapper { display: flex; gap: 50px; flex-wrap: wrap; }
