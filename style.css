@@ -176,13 +176,35 @@ footer { background: #ffffff; padding: 80px 50px 30px; border-top: 1px solid #ea
 
 .leadership-section { text-align: center; border-top: 1px solid #eaeaea; padding-top: 60px; margin-bottom: 60px; }
 .leadership-section h2 { font-size: 32px; margin-bottom: 40px; }
-.team-grid { display: flex; justify-content: center; gap: 40px; flex-wrap: wrap; }
-.team-card { background: #fff; border: 1px solid #eaeaea; padding: 30px; width: 300px; text-align: center; transition: 0.3s; }
-.team-card:hover { transform: translateY(-5px); box-shadow: 0 15px 30px rgba(0,0,0,0.05); }
-.team-card img { width: 160px; height: 160px; object-fit: cover; border-radius: 50%; border: 3px solid #f0e6d2; margin-bottom: 20px; }
-.team-card h3 { font-size: 20px; color: #333; margin-bottom: 5px; }
-.team-card .role { color: #b76e79; font-size: 14px; text-transform: uppercase; letter-spacing: 1px; font-weight: bold;}
+/* Team Grid Vertical Layout */
+.team-grid {
+    display: flex;
+    flex-direction: column; /* This forces vertical stacking */
+    align-items: center;
+    gap: 60px;
+    padding: 40px 0;
+}
 
+.team-card {
+    text-align: center;
+    transition: transform 0.4s ease;
+}
+
+.team-card img {
+    /* Ensures the circle stays perfect */
+    display: block;
+    margin: 0 auto 20px auto;
+}
+
+.team-card h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 28px;
+    margin-bottom: 5px;
+}
+
+.team-card:hover {
+    transform: translateY(-10px);
+}
 /* Contact Page Specifics */
 .contact-wrapper { display: flex; gap: 50px; flex-wrap: wrap; }
 .contact-info, .contact-form-container { flex: 1; min-width: 300px; background: #fff; padding: 40px; border: 1px solid #eaeaea; }
