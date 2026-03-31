@@ -306,3 +306,12 @@ footer { background: #ffffff; padding: 80px 50px 30px; border-top: 1px solid #ea
     font-family: 'Cormorant Garamond', serif;
     font-weight: 500;
 }
+.product-description {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.85rem;
+    color: #777;
+    line-height: 1.5;
+    margin: 10px 15px;
+    /* This ensures your cards stay the same height even if text length differs */
+    min-height: 3em; 
+}
