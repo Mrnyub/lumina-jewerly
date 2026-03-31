@@ -288,3 +288,21 @@ footer { background: #ffffff; padding: 80px 50px 30px; border-top: 1px solid #ea
     from { opacity: 0; transform: translateY(30px); }
     to { opacity: 1; transform: translateY(0); }
 }
+.product-description {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.85rem;
+    color: #777;
+    line-height: 1.5;
+    margin: 10px 15px 15px;
+    height: 3.2em; /* Keeps all cards the same height */
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* Shows only 2 lines then adds ... */
+    -webkit-box-orient: vertical;
+}
+
+.product-card h3 {
+    margin-top: 15px;
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 500;
+}
