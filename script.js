@@ -109,3 +109,19 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
 });
+document.addEventListener('DOMContentLoaded', function() {
+    const productCards = document.querySelectorAll('.product-card');
+
+    productCards.forEach(card => {
+        // Find the image and the title within the card
+        const clickableElements = card.querySelectorAll('.product-img, h3:not(.category)');
+        const description = card.querySelector('.product-description');
+
+        clickableElements.forEach(el => {
+            el.addEventListener('click', () => {
+                // Toggle the 'show' class on the description
+                description.classList.toggle('show');
+            });
+        });
+    });
+});
