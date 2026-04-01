@@ -315,3 +315,35 @@ footer { background: #ffffff; padding: 80px 50px 30px; border-top: 1px solid #ea
     /* This ensures your cards stay the same height even if text length differs */
     min-height: 3em; 
 }
+/* Hide description by default */
+.product-description {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: all 0.5s ease-in-out;
+    margin: 0 15px; /* Remove vertical margin when hidden */
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.85rem;
+    color: #777;
+    line-height: 1.5;
+}
+
+/* Class to show description when clicked */
+.product-description.show {
+    max-height: 100px; /* Adjust based on text length */
+    opacity: 1;
+    margin: 10px 15px 15px; /* Restore spacing when visible */
+}
+
+/* Optional: Add a pointer cursor to images/titles to show they are clickable */
+.product-img, .product-card h3 {
+    cursor: pointer;
+}
+/* Styling Snipcart's internal description */
+.snipcart-item-line__description {
+    font-family: 'Montserrat', sans-serif !important;
+    font-size: 12px !important;
+    color: #888 !important;
+    font-style: italic !important;
+    line-height: 1.4 !important;
+}
