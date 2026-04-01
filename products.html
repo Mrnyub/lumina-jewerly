@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lumina | Fine Jewelry</title>
+    <title>Lumina | Collections</title>
     <link rel="stylesheet" href="style.css">
     
     <link rel="preconnect" href="https://app.snipcart.com">
@@ -23,9 +23,9 @@
         </div>
         <nav>
             <ul class="nav-links">
-                <li><a href="index.html" style="color: #b76e79;">Home</a></li>
-                <li><a href="products.html">Collections</a></li>
-                <li><a href="about.html">About us</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html" style="color: #b76e79;">Collections</a></li>
+                <li><a href="about.html">Atelier</a></li>
                 <li><a href="tracker.html">Tracker</a></li>
                 <li><a href="reviews.html">Reviews</a></li>
                 <li><a href="contact.html">Contact</a></li>
@@ -36,71 +36,124 @@
         </button>
     </header>
 
-    <main class="hero">
-        <div class="hero-text">
-            <h1>Elegance,<br>Defined.</h1>
-            <p>Discover our exclusive collection of handcrafted, ethically sourced fine jewelry. Designed to illuminate your everyday moments and lasting memories.</p>
-            <div class="cta-buttons">
-                <a href="products.html" class="btn primary-btn">Explore Collection</a>
-                <a href="about.html" class="btn secondary-btn">Our Heritage</a>
-            </div>
+    <main class="featured-products" style="margin-top: 40px;">
+        <div style="text-align: center; margin-bottom: 40px; opacity: 0; animation: fadeUp 1s ease forwards;">
+            <h1 style="font-size: 42px; color: #333; margin-bottom: 15px;">Our Collections</h1>
+            <p style="color: #666; max-width: 600px; margin: 0 auto;">Explore our curated selection of fine jewelry, designed to bring brilliant light to your most cherished moments.</p>
         </div>
-        <div class="hero-image"></div>
-    </main>
-
-   <section class="featured-products">
-    <div class="section-header">
-        <h2>Featured Pieces</h2>
-        <a href="products.html" class="view-all">View All Collections &rarr;</a>
-    </div>
-   <div class="product-grid">
         
+        <div class="search-container" style="opacity: 0; animation: fadeUp 1s ease forwards; animation-delay: 0.1s;">
+            <input type="text" id="searchInput" placeholder="Search for rings, necklaces, earrings..." class="luxury-search">
+        </div>
+
+  <div class="product-grid" id="productGrid" style="opacity: 0; animation: fadeUp 1s ease forwards; animation-delay: 0.2s;">
+            
     <div class="product-card">
         <img src="https://images.pexels.com/photos/3641056/pexels-photo-3641056.jpeg" alt="Rose Gold Eternity Ring" class="product-img">
+        <h3 class="category" style="display: none;">ring gold</h3>
         <h3>Rose Gold Eternity Ring</h3>
         <p class="product-description">A continuous band of hand-set pavé diamonds crafted in 18k rose gold, symbolizing everlasting love.</p>
         <p class="price">₱24,500.00</p>
         <button class="snipcart-add-item add-to-cart-btn"
-            data-item-id="lumina-ring-01"
-            data-item-price="24500.00"
-            data-item-url="https://mrnyub.github.io/lumina-jewerly/index.html"
-            data-item-image="https://images.pexels.com/photos/3641056/pexels-photo-3641056.jpeg"
-            data-item-name="Rose Gold Eternity Ring"
-            data-item-description="A continuous band of hand-set pavé diamonds crafted in 18k rose gold, symbolizing everlasting love.">
-            Add to Bag
+          data-item-id="lumina-ring-01"
+          data-item-price="24500.00"
+          data-item-url="https://mrnyub.github.io/lumina-jewerly/products.html"
+          data-item-image="https://images.pexels.com/photos/3641056/pexels-photo-3641056.jpeg"
+          data-item-name="Rose Gold Eternity Ring"
+          data-item-description="A continuous band of hand-set pavé diamonds crafted in 18k rose gold, symbolizing everlasting love.">
+          Add to Bag
         </button>
     </div>
 
     <div class="product-card">
         <img src="https://images.unsplash.com/photo-1596944924616-7b38e7cfac36?w=600&q=80" alt="Sapphire Drop Pendant" class="product-img">
+        <h3 class="category" style="display: none;">necklace sapphire</h3>
         <h3>Sapphire Drop Pendant</h3>
         <p class="product-description">A deep cerulean pear-cut sapphire suspended from a delicate white gold chain, accented by a single brilliant diamond.</p>
         <p class="price">₱18,990.00</p>
         <button class="snipcart-add-item add-to-cart-btn"
-            data-item-id="lumina-pendant-01"
-            data-item-price="18990.00"
-            data-item-url="https://mrnyub.github.io/lumina-jewerly/index.html"
-            data-item-image="https://images.unsplash.com/photo-1596944924616-7b38e7cfac36?w=600&q=80"
-            data-item-name="Sapphire Drop Pendant"
-            data-item-description="A deep cerulean pear-cut sapphire suspended from a delicate white gold chain, accented by a single brilliant diamond.">
-            Add to Bag
+          data-item-id="lumina-pendant-01"
+          data-item-price="18990.00"
+          data-item-url="https://mrnyub.github.io/lumina-jewerly/products.html"
+          data-item-image="https://images.unsplash.com/photo-1596944924616-7b38e7cfac36?w=600&q=80"
+          data-item-name="Sapphire Drop Pendant"
+          data-item-description="A deep cerulean pear-cut sapphire suspended from a delicate white gold chain, accented by a single brilliant diamond.">
+          Add to Bag
+        </button>
+    </div>
+
+    <div class="product-card">
+        <img src="https://images.unsplash.com/photo-1611591437281-460bfbe1220a?w=600&q=80" alt="Classic Diamond Tennis Bracelet" class="product-img">
+        <h3 class="category" style="display: none;">bracelet diamond</h3>
+        <h3>Diamond Tennis Bracelet</h3>
+        <p class="product-description">A timeless row of ethically sourced brilliant-cut diamonds totaling 2 carats, set in polished platinum.</p>
+        <p class="price">₱45,000.00</p>
+        <button class="snipcart-add-item add-to-cart-btn"
+          data-item-id="lumina-bracelet-01"
+          data-item-price="45000.00"
+          data-item-url="https://mrnyub.github.io/lumina-jewerly/products.html"
+          data-item-image="https://images.unsplash.com/photo-1611591437281-460bfbe1220a?w=600&q=80"
+          data-item-name="Diamond Tennis Bracelet"
+          data-item-description="A timeless row of ethically sourced brilliant-cut diamonds totaling 2 carats, set in polished platinum.">
+          Add to Bag
+        </button>
+    </div>
+
+    <div class="product-card">
+        <img src="https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?w=600&q=80" alt="Tahitian Pearl Earrings" class="product-img">
+        <h3 class="category" style="display: none;">earrings pearl</h3>
+        <h3>Tahitian Pearl Earrings</h3>
+        <p class="product-description">Exquisite black Tahitian pearls featuring naturally iridescent overtones, mounted on 14k yellow gold studs.</p>
+        <p class="price">₱12,500.00</p>
+        <button class="snipcart-add-item add-to-cart-btn"
+          data-item-id="lumina-earrings-01"
+          data-item-price="12500.00"
+          data-item-url="https://mrnyub.github.io/lumina-jewerly/products.html"
+          data-item-image="https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?w=600&q=80"
+          data-item-name="Tahitian Pearl Earrings"
+          data-item-description="Exquisite black Tahitian pearls featuring naturally iridescent overtones, mounted on 14k yellow gold studs.">
+          Add to Bag
+        </button>
+    </div>
+
+    <div class="product-card">
+        <img src="https://images.pexels.com/photos/4291121/pexels-photo-4291121.jpeg" alt="Vintage Platinum Engagement Ring" class="product-img">
+        <h3 class="category" style="display: none;">ring diamond platinum engagement</h3>
+        <h3>Vintage Platinum Ring</h3>
+        <p class="product-description">An intricate vintage-inspired design featuring a center solitaire diamond with milgrain detailing in pure platinum.</p>
+        <p class="price">₱85,000.00</p>
+        <button class="snipcart-add-item add-to-cart-btn"
+          data-item-id="lumina-ring-02"
+          data-item-price="85000.00"
+          data-item-url="https://mrnyub.github.io/lumina-jewerly/products.html"
+          data-item-image="https://images.pexels.com/photos/4291121/pexels-photo-4291121.jpeg"
+          data-item-name="Vintage Platinum Ring"
+          data-item-description="An intricate vintage-inspired design featuring a center solitaire diamond with milgrain detailing in pure platinum.">
+          Add to Bag
+        </button>
+    </div>
+
+    <div class="product-card">
+        <img src="https://images.unsplash.com/photo-1611085583191-a3b181a88401?w=600&q=80" alt="Minimalist Gold Choker" class="product-img">
+        <h3 class="category" style="display: none;">necklace gold choker</h3>
+        <h3>Minimalist Gold Choker</h3>
+        <p class="product-description">A sleek, solid 18k yellow gold band designed to sit gracefully at the collarbone. Perfect for layering.</p>
+        <p class="price">₱21,000.00</p>
+        <button class="snipcart-add-item add-to-cart-btn"
+          data-item-id="lumina-choker-01"
+          data-item-price="21000.00"
+          data-item-url="https://mrnyub.github.io/lumina-jewerly/products.html"
+          data-item-image="https://images.unsplash.com/photo-1611085583191-a3b181a88401?w=600&q=80"
+          data-item-name="Minimalist Gold Choker"
+          data-item-description="A sleek, solid 18k yellow gold band designed to sit gracefully at the collarbone. Perfect for layering.">
+          Add to Bag
         </button>
     </div>
 
 </div>
-</section>
+    </main>
 
-    <section class="suppliers">
-        <h2>Ethical Sourcing Partners</h2>
-        <p>We work exclusively with certified, conflict-free providers.</p>
-        <div class="supplier-logos">
-            <span>[ Antwerp Diamond Co. ]</span>
-            <span>[ Swiss Gold Refiners ]</span>
-            <span>[ Tahitian Pearl Farms ]</span>
-        </div>
-    </section>
-
-    <footer>
+    <footer style="margin-top: 80px;">
         <div class="footer-content">
             <div class="footer-column">
                 <div class="logo" style="display: flex; align-items: center; gap: 10px;">
